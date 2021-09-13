@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Bai 7</title>
 </head>
 <body>
-$END$
+<script>
+    let ptA = parseFloat(prompt('Nhap a = '));
+    let ptB = parseFloat(prompt('Nhap b = '));
+    let ptC = parseFloat(prompt('Nhap c = '));
+    let ptDelta;
+    let ptNghiem;
+    let ptNghiem1;
+    let ptNghiem2;
+    if (ptA == 0) alert('Dieu kien a # 0');
+        else {
+            ptDelta = ptB * ptB - 4 * ptA * ptC;
+            if (ptDelta < 0) alert('Phuong trinh vo nghiem');
+                else if (ptDelta == 0) {
+                            ptNghiem = -ptB / 2 * ptA;
+                            alert('Phuong trinh co nghiem kep =' +ptNghiem);
+            }
+                else {
+                    ptNghiem1 = -b + Math.sqrt(ptDelta) / 2 * ptA;
+                    ptNghiem2 = (-b - Math.sqrt(ptDelta)) / 2 * ptA;
+                    alert('Phuong trinh co hai nghiem x = ' + ptNghiem2 + 'x1 = ' +ptNghiem1);
+            }
+    }
+</script>
 </body>
 </html>

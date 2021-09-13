@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai10</title>
+</head>
+<body>
+<script>
+    let soDien = parseFloat(prompt('Nhap so dien = '));
+    let tienDien;
+    let bac1 = 2000;
+    let bac2 = 2500;
+    let bac3 = 2900;
+    if (soDien < 0) alert('So dien khong duoc < 0');
+    else if (soDien <= 200) {
+        tienDien = soDien * bac1;
+        alert('Ban da dung dien trong khoang 0 -200kWh, so tien phai tra: ' + tienDien);
+    } else if (soDien <= 400) {
+        tienDien = soDien * bac2;
+        alert('Ban da dung dien trong khoang 200 -400kWh, so tien phai tra: ' + tienDien);
+    } else {
+        tienDien = soDien * bac3;
+        alert('Ban da dung dien trong khoang 400kWh tro len, so tien phai tra: ' + tienDien);
+    }
+</script>
+</body>
+</html>

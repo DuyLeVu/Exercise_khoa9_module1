@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Bai6</title>
 </head>
 <body>
-$END$
+<script>
+    let ptA = parseFloat(prompt('Nhap a = '));
+    let ptB = parseFloat(prompt('Nhap b = '));
+    let ptNghiem;
+    if (ptA == 0) {
+        if(ptB == 0) alert('Phuong trinh co vo so nghiem');
+            else alert('Phuong trinh co vo so nghiem');
+    } else {
+        ptNghiem = -ptB / ptA;
+        alert('Nghiem cua phuong trinh: ' + ptNghiem);
+    }
+</script>
 </body>
 </html>
