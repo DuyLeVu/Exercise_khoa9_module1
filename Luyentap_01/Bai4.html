@@ -6,15 +6,12 @@
 </head>
 <body>
 <script>
-    let diemKiemTra = parseFloat(prompt('Nhap diem kiem tra: '));
-    let diemGiuaKy = parseFloat(prompt('Nhap diem thi giua ky: '));
-    let diemCuoiKy = parseFloat(prompt('Nhap diem cuoi ky: '));
-    let diemTrungBinh = (diemKiemTra + diemCuoiKy + diemGiuaKy) / 3;
-    if (diemTrungBinh >= 9.0) alert('A');
-        else if (diemTrungBinh >= 7) alert('B');
-            else if (diemTrungBinh >=5) alert('C');
-            else if (diemTrungBinh >=0 ) alert('D');
-            else alert('Diem khong hop le');
+  let a = parseInt(prompt('A = '));
+  let b = parseInt(prompt('B = '));
+  let c = parseInt(prompt('C = '));
+  if (a>b&&a>c) alert(' Max = A');
+    else if (b>c) alert('Max = B');
+    else alert('Max = C');
 </script>
 </body>
 </html>
