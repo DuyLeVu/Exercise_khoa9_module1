@@ -1,10 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>CALCULATOR</title>
+    <style>
+        table{
+            border: 5px solid black;
+        }
+        td{
+            padding: 10px;
+        }
+        button{
+            width: 50px;
+            height: 40px;
+            background-color: white;
+            color: blue;
+            border: 2px solid grey;
+        }
+        input{
+            width: 250px;
+            height: 40px;
+        }
+    </style>
 </head>
 <body>
-$END$
+    <table>
+        <tr>
+            <td colspan="4"><input type="text" id="src">
+            </td>
+        </tr>
+        <tr>
+            <td><button class="btn" onclick="addTxt('1')">1</button></td>
+            <td><button class="btn" onclick="addTxt('2')">2</button></td>
+            <td><button class="btn" onclick="addTxt('3')">3</button></td>
+            <td><button class="btn" onclick="addTxt('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button class="btn" onclick="addTxt('4')">4</button></td>
+            <td><button class="btn" onclick="addTxt('5')">5</button></td>
+            <td><button class="btn" onclick="addTxt('6')">6</button></td>
+            <td><button class="btn" onclick="addTxt('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button class="btn" onclick="addTxt('7')">7</button></td>
+            <td><button class="btn" onclick="addTxt('8')">8</button></td>
+            <td><button class="btn" onclick="addTxt('9')">9</button></td>
+            <td><button class="btn" onclick="addTxt('*')">x</button></td>
+        </tr>
+        <tr>
+            <td><button class="btn" onclick="clean()">C</button></td>
+            <td><button class="btn" onclick="addTxt('0')">0</button></td>
+            <td><button class="btn" onclick="cal()">=</button></td>
+            <td><button onclick="addTxt('/')">/</button></td>
+        </tr>
+    </table>
+    <script src="js/script.js"></script>
 </body>
 </html>

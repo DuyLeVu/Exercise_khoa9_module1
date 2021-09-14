@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Good-Fast-Cheap</title>
+<!--    FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        table i{
+            font-size: 40px;
+        }
+    </style>
 </head>
 <body>
-$END$
+<table>
+    <tr>
+        <td><button id="good" onclick="checkGood"> <i class="fa fa-toggle-off"></i> </button>
+        </td>
+        <th>GOOD</th>
+    </tr>
+    <tr>
+        <td><button id="goodOn2" value="fall" onclick="statusOn2()"> <i class="fa fa-toggle-off"></i> </button>
+        </td>
+        <th>CHEAP</th>
+    </tr>
+    <tr>
+        <td><button id="goodOn3" value="fall" onclick="statusOn3()"> <i class="fa fa-toggle-off"></i> </button>
+        </td>
+        <th>FAST</th>
+    </tr>
+</table>
+<script src="js/script.js"></script>
 </body>
 </html>
